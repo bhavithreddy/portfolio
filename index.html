@@ -1,56 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ryan - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yelti Bhavith Reddy - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <h1>
-                Ryan
-            </h1>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <button id="btn">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </nav>
+      <nav>
+        <h1>Yelti Bhavith Reddy</h1>
+        <ul>
+          <li><a href="#s-container">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
     </header>
 
+    <div class="icons">
+      <a href="https://github.com/YeltiBhavithReddy"
+        ><i class="fa-brands fa-github"></i
+      ></a>
+      <div class="line"></div>
+      <a href="https://www.linkedin.com/in/yeltibhavithreddy/"
+        ><i class="fa-brands fa-linkedin-in"></i
+      ></a>
+    </div>
+
     <section>
-        <div class="s-container">
-            <div class="content">
-                <span class="subtitle">
-                    Hello
-                </span>
-                <h1 class="title">
-                    I'm <span>Ryan <br></span>a UI/UX Designer
-                </h1>
-                <p class="description">
-                    Welcome to my UI/UX design portfolio! I'm Ryan, a dedicated and imaginative UI/UX designer with a flair for crafting visually appealing and intuitive user experiences. My journey in design has led me to work on diverse projects, from sleek mobile apps to engaging website interfaces.
-                </p>
-                <div class="buttons">
-                    <a href="mailto:exemple@gmail.com">Hire Me</a>
-                    <button>Portfolio</button>
-                </div>
-            </div>
-            <div class="image">
-                <img src="./pfp.jpeg" alt="pfp">
-            </div>
+      <div class="s-container" id="s-container">
+        <div class="content">
+          <span class="subtitle">Hello</span>
+          <h1 class="title">
+            I'm <span>Yelti Bhavith Reddy <br /></span>a Software Engineer.
+          </h1>
+          <p class="description">
+            Welcome to my portfolio! I’m Yelti, Creative and Analytical Software Developer with a focus on building efficient, user-friendly applications. Proven expertise in Python, Java, and ReactJS, coupled with a strong ability to enhance system performance and accuracy through innovative algorithms.
+          </p>
+          <div class="buttons">
+            <a href="#about">About Me</a>
+            <a href="#projects">Portfolio</a>
+          </div>
         </div>
+        <div class="image">
+          <img src="./images/profile.jpg" alt="Profile Picture" />
+        </div>
+      </div>
     </section>
-</body>
-<script>
-    const btn= document.getElementById("btn")
-    btn.addEventListener("click", () => {
-        document.querySelector("header ul").classList.toggle("show")
-    })
-</script>
+
+    <div class="projects-section" id="projects">
+      <div class="header">
+        <h1>Some Of My Work:</h1>
+      </div>
+      <div class="wrapper">
+        <div class="project-card">
+          <div class="project-image-container">
+            <img
+              class="project-image"
+              src="./images/Capture.PNG"
+              alt="To-Do List Website"
+            />
+          </div>
+          <div class="project-content">
+            <h3>To-Do List Website</h3>
+            <div class="check-project">
+              <a
+                href="https://github.com/bhavithreddy/To-Do-List-Webiste.git"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image-container">
+            <img
+              class="project-image"
+              src="./images/creditcard.png"
+              alt="Delivery Store"
+            />
+          </div>
+          <div class="project-content">
+            <h3>Credit Card Fraud Detection</h3>
+            <div class="check-project">
+              <a
+                href="https://github.com/bhavithreddy/Credit-card-fraud-detection.git"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image-container">
+            <img
+              class="project-image"
+              src="./images/epilepsy.png"
+              alt="Stylist Sneakers"
+            />
+          </div>
+          <div class="project-content">
+            <h3>On-Chip Epilepsy Detection Using Machine Learning</h3>
+            <div class="check-project">
+              <a
+                href="https://github.com/YeltiBhavithReddy/stylist-sneakers"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="experience-section" id="experience">
+      <div class="header">
+      
+        <h1>My Professional Journey:</h1>
+      </div>
+      <div class="wrapper">
+        <div class="experience-card">
+          <div class="experience-header">
+            <h3>Developer and Technology Programmer - Accenture</h3>
+            
+          </div>
+          <p>
+            Gained hands-on experience in software development, working with diverse technologies and contributing to various projects. Focused on enhancing system performance and reliability.
+          </p>
+          <ul>
+            <li>Completed the Developer and Technology Job Simulation, gaining end-to-end understanding of the Software Development Lifecycle.</li>
+            <li>Conducted in-depth research into emerging technology trends, particularly in DevOps.</li>
+            <li>Created and delivered a PowerPoint presentation analyzing and comparing Waterfall and Agile methodologies.</li>
+            <li>Designed a custom algorithm using pseudocode and communicated its logic through a detailed flow diagram.</li>
+            <li>Debugged Python code by fixing syntax and logic errors.</li>
+          </ul>
+        </div>
+        <div class="experience-card">
+          <div class="experience-header">
+            <h3>Advanced Software Engineering Programmer - Walmart USA</h3>
+            
+          </div>
+          <p>
+            Worked on significant technical projects, including developing a novel heap data structure and creating detailed UML and ER diagrams. Enhanced understanding of the full software development lifecycle.
+          </p>
+          <ul>
+            <li>Solved difficult technical projects for various teams during the Advanced Software Engineering Job Simulation.</li>
+            <li>Developed a novel heap data structure in Java for Walmart’s shipping department.</li>
+            <li>Designed a UML class diagram for a data processor, considering different operating modes and database connections.</li>
+            <li>Created an entity relationship diagram for a new database for Walmart’s pet department.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    
+
+    <div class="contact" id="contact">
+      <div class="container">
+        <div class="header">
+          <h3>Contact</h3>
+          <h1>Reach me out via:</h1>
+        </div>
+        <div class="wrapper">
+          <div class="grp">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>yeltibhavithreddy@gmail.com</span>
+          </div>
+          <div class="grp">
+            <i class="fa-solid fa-phone"></i>
+            <span>+91 8639662717</span>
+          </div>
+          <div class="grp">
+            <i class="fa-brands fa-linkedin"></i>
+            <span>@yeltibhavithreddy</span>
+          </div>
+        </div>
+        <div class="footer">
+          <p>Let's talk about a project</p>
+          <a href="mailto:yeltibhavithreddy@gmail.com">
+            Hire Me <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- back top button  -->
+    <a href="#" class="back-top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+  </body>
+  <script src="script.js"></script>
 </html>
